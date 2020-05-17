@@ -1,0 +1,14 @@
+<form [formGroup]="mathForm">
+    <div class="equation">
+        <span>{{ a }}</span> +
+        <span>{{ b }}</span> =
+    </div>
+    <input type="text" formControlName="answer" appAlmostCorrect />
+</form>
+
+<div class="time-stats">Average time you take to answer : {{ secondsPerAnswer | number: '1.1-3'}} secs</div>
+
+<!-- <hr>
+<div>Form is Valid : {{mathForm.valid}}</div>
+<div>Form Values {{mathForm.value | json}}</div>
+<div>Form has Errors : {{mathForm.errors | json}}</div> -->
